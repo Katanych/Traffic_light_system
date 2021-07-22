@@ -3,7 +3,7 @@
 
 void init()
 {
-    /* Функция инициализации системы */
+    /* Р¤СѓРЅРєС†РёСЏ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё СЃРёСЃС‚РµРјС‹ */
     TRISF = 0x00;       LATF = off;
     TRISG = 0x00;       LATG = off;
     flashing_yellow(NUM_FLASHING_YELLOW, FLASHING_TIME);
@@ -17,8 +17,8 @@ void delay(float sec)
 void red(float signal_time)
 {
     /* 
-     * Функция включения красного сигнала (G1 -> HL2).
-     * Включает красный сигнал светофора на время signal_time_red
+     * Р¤СѓРЅРєС†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ РєСЂР°СЃРЅРѕРіРѕ СЃРёРіРЅР°Р»Р° (G1 -> HL2).
+     * Р’РєР»СЋС‡Р°РµС‚ РєСЂР°СЃРЅС‹Р№ СЃРёРіРЅР°Р» СЃРІРµС‚РѕС„РѕСЂР° РЅР° РІСЂРµРјСЏ signal_time_red
      * 
      */
     signal_red = on;
@@ -29,7 +29,7 @@ void red(float signal_time)
 void yellow(float signal_time)
 {
     /*
-     * Функция включения желтого сигнала
+     * Р¤СѓРЅРєС†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ Р¶РµР»С‚РѕРіРѕ СЃРёРіРЅР°Р»Р°
      * F1 -> HL3
      */
     signal_yellow = on;
@@ -40,7 +40,7 @@ void yellow(float signal_time)
 void green(float signal_time)
 {
     /*
-     * Функция включения зеленого сигнала
+     * Р¤СѓРЅРєС†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ Р·РµР»РµРЅРѕРіРѕ СЃРёРіРЅР°Р»Р°
      * G0 -> HL1
      */
     signal_green = on;
@@ -51,7 +51,7 @@ void green(float signal_time)
 void red_and_yellow(float signal_time)
 {
     /*
-     * Функция включения и красного и желтого сигнала
+     * Р¤СѓРЅРєС†РёСЏ РІРєР»СЋС‡РµРЅРёСЏ Рё РєСЂР°СЃРЅРѕРіРѕ Рё Р¶РµР»С‚РѕРіРѕ СЃРёРіРЅР°Р»Р°
      */
     signal_red = on;
     yellow(signal_time);
@@ -61,7 +61,7 @@ void red_and_yellow(float signal_time)
 void flashing_yellow(float num_signal, float flashing_time)
 {
     /*
-     * Функция мигающего желтого цвета
+     * Р¤СѓРЅРєС†РёСЏ РјРёРіР°СЋС‰РµРіРѕ Р¶РµР»С‚РѕРіРѕ С†РІРµС‚Р°
      * F1 -> HL3
      */
     unsigned i = 0; 
@@ -78,7 +78,7 @@ void flashing_yellow(float num_signal, float flashing_time)
 void flashing_green(float num_signal, float flashing_time)
 {
     /*
-     * Функция мигающего зеленого цвета
+     * Р¤СѓРЅРєС†РёСЏ РјРёРіР°СЋС‰РµРіРѕ Р·РµР»РµРЅРѕРіРѕ С†РІРµС‚Р°
      */
     unsigned i = 0; 
     while (i < num_signal)
